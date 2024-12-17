@@ -1,0 +1,16 @@
+/* styles/global.css */
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-image: url('/Bg2Elect.jpg'); /* Ruta relativa desde public */
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-attachment: fixed; /* Fija el fondo al viewport */
+	background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
+	background-blend-mode: overlay; /* Mezclar color con transparencia */
+	font-family: Arial, sans-serif; /* Ejemplo de fuente */
+}

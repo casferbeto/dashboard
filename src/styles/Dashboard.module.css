@@ -1,0 +1,34 @@
+/* Contenedor del mensaje para pantallas pequeñas */
+.messageContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f4f4f4;
+	text-align: center;
+	padding: 1rem;
+}
+
+.messageText {
+	color: #333;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.dashboardContainer {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	background-color: transparent; /* Cambiar a transparente */
+	height: 100vh;
+}
+
+.cardContainer {
+	max-width: 1200px; /* Limitar el contenedor */
+	margin: 20px auto; /* Centrado con margen superior */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px; /* Espacio entre las cards */
+	justify-content: space-between;
+}
+

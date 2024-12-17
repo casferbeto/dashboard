@@ -1,0 +1,38 @@
+.uploadContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+h3 {
+	margin-bottom: 10px;
+}
+
+.fileInput {
+	margin-bottom: 10px;
+}
+
+.uploadButton {
+	background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.uploadButton:hover {
+	background-color: #0056b3;
+}
+
+.successMessage {
+	color: green;
+	margin-top: 10px;
+}
+
+.errorMessage {
+	color: red;
+	margin-top: 10px;
+}

@@ -1,0 +1,33 @@
+.uploadContainer {
+	padding: 20px;
+
+	max-width: 400px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.uploadContainer h3 {
+	margin-bottom: 15px;
+}
+
+.uploadContainer input {
+	margin-bottom: 10px;
+}
+
+.uploadContainer button {
+	padding: 10px 15px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.uploadContainer button:hover {
+	background-color: #0056b3;
+}
+
+.uploadContainer p {
+	margin-top: 10px;
+	color: green;
+}

@@ -1,0 +1,160 @@
+.pageContainer {
+	max-width: 1200px; /* Ancho máximo del contenedor */
+	margin: 0 auto; /* Centrar el contenedor horizontalmente */
+	padding: 0 1rem; /* Agregar algo de espacio en los lados para pantallas pequeñas */
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem; /* Espaciado entre los elementos principales */
+}
+
+/* Contenedor principal con cards y gráfica */
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 5px;
+	gap: 4rem;
+	padding: 0.5rem; /* Añadimos padding general para espacio */
+}
+
+/* Cards alineadas en columna */
+.cardsContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 30%; /* Ancho reducido de las cards */
+}
+
+/* Card */
+.card {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	padding: 20px; /* Añadimos padding dentro de las cards */
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Centrar contenido */
+	text-align: center;
+}
+
+/* Gráfica */
+.chartContainer {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	width: 65%;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.chartContainer.expanded {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw; /* Aseguramos que use todo el ancho de la ventana */
+	height: 100vh; /* Aseguramos que use toda la altura de la ventana */
+	padding: 40px;
+	z-index: 1000;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: none; /* Eliminamos sombras en modo expandido */
+}
+
+.chartContainer.expanded canvas {
+	width: 90% !important; /* Aseguramos que la gráfica ocupe el 90% del espacio disponible */
+	height: 90% !important;
+}
+
+/* Botón para volver al Dashboard */
+.backButton {
+	background-color: #e5e7eb;
+	color: #1e40af;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+
+.backButton:hover {
+	background-color: #d1d5db;
+}
+
+/* Responsividad para las gráficas */
+@media (max-width: 1024px) {
+	.row {
+		flex-direction: column; /* Apila las gráficas verticalmente */
+		align-items: center; /* Centra las gráficas */
+	}
+
+	.chartContainer {
+		width: 100%; /* La gráfica ocupa todo el ancho disponible */
+		padding: 10px; /* Reduce el padding */
+	}
+
+	.cardsContainer {
+		width: 90%; /* Las cards también ocupan más espacio en pantallas pequeñas */
+		gap: 2rem; /* Ajusta el espacio entre las cards */
+	}
+
+	.backButton {
+		width: 100%; /* Botón ocupa todo el ancho */
+		text-align: center; /* Centra el texto dentro del botón */
+	}
+}
+/* Asegurar que las gráficas siempre ocupen el tamaño del contenedor */
+.chartContainer canvas {
+	width: 100% !important;
+	height: auto !important;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+	.row {
+		flex-direction: column; /* Apila las gráficas verticalmente */
+		align-items: center; /* Centra las gráficas */
+	}
+
+	.chartContainer {
+		width: 100%; /* La gráfica ocupa todo el ancho disponible */
+		padding: 10px; /* Reduce el padding */
+	}
+
+	.cardsContainer {
+		width: 90%; /* Las cards también ocupan más espacio en pantallas pequeñas */
+		gap: 2rem; /* Ajusta el espacio entre las cards */
+	}
+
+	.backButton {
+		width: 100%; /* Botón ocupa todo el ancho */
+		text-align: center; /* Centra el texto dentro del botón */
+	}
+}
+
+.chartPairContainer {
+	display: flex;
+	justify-content: space-between; /* Espaciado uniforme entre las gráficas */
+	gap: 0.5rem; /* Espacio entre las gráficas */
+	width: 100%; /* Ocupar todo el ancho disponible */
+}
+
+.chartPairContainer > div {
+	flex: 1; /* Cada gráfica ocupa el mismo espacio */
+	max-width: 100%; /* Evitar que las gráficas excedan el contenedor */
+}
+
+@media (max-width: 768px) {
+	.chartPairContainer {
+		flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+		gap: 2rem; /* Añadir espacio entre las gráficas */
+	}
+
+	.chartPairContainer > div {
+		width: 100%; /* Cada gráfica ocupa todo el ancho */
+	}
+}

@@ -1,0 +1,22 @@
+.pdfContainer {
+	width: 210mm; /* Ancho estándar A4 */
+	min-height: 297mm; /* Altura estándar A4 */
+	padding: 20mm;
+	background: white;
+	font-family: Arial, sans-serif;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.summary {
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.chart {
+	margin-top: 20px;
+	text-align: center;
+}

@@ -1,0 +1,34 @@
+.pdf-export {
+	font-family: 'Arial', sans-serif;
+	font-size: 12px;
+	color: #333;
+	background: white;
+	padding: 20px;
+}
+
+.pdf-export-header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.pdf-export-header img {
+	max-width: 100px;
+}
+
+.pdf-export-section {
+	margin-bottom: 30px;
+}
+
+.pdf-export-section h2 {
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #444;
+}
+
+.pdf-export-footer {
+	text-align: center;
+	font-size: 10px;
+	margin-top: 20px;
+	color: #999;
+}

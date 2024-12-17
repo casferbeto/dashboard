@@ -1,0 +1,50 @@
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+
+	text-align: center;
+}
+
+h2 {
+	margin-bottom: 20px;
+	color: #007bff;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.fileInput {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+
+.button {
+	padding: 10px 15px;
+	font-size: 1rem;
+	color: #fff;
+	background-color: #007bff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.button:disabled {
+	background-color: #a3c4f3;
+	cursor: not-allowed;
+}
+
+.message {
+	margin-top: 15px;
+	font-size: 1rem;
+	color: #28a745;
+}
+
+.message.error {
+	color: #dc3545;
+}

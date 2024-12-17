@@ -1,0 +1,102 @@
+/* Header general */
+.header {
+	background-color: white(59, 130, 246, 0.5); /* Azul claro con transparencia */
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del header */
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+/* Estilos para los logos */
+.logoLeft,
+.logoRight {
+	width: 10%; /* Ajusta el tamaño según tus necesidades */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.logo {
+	max-height: 50px; /* Limita la altura del logo */
+	width: auto; /* Mantén la proporción del logo */
+}
+
+/* Menú */
+.menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60%; /* Ajusta el tamaño del menú */
+}
+
+.menu ul {
+	display: flex;
+	gap: 1rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+	color: #ffd700; /* Amarillo para el hover */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+	.menu {
+		display: none; /* Oculta el menú en pantallas pequeñas */
+	}
+
+	.logoLeft,
+	.logoRight {
+		width: 15%; /* Ajusta el tamaño del logo en pantallas pequeñas */
+	}
+}
+
+/* Menú hamburguesa */
+.hamburger {
+	display: none; /* Oculto en pantallas grandes */
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 24px;
+}
+
+.bar {
+	width: 100%;
+	height: 3px;
+	background-color: black;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.barOpen:nth-child(1) {
+	transform: translateY(9px) rotate(45deg); /* Línea superior girada */
+}
+
+.barOpen:nth-child(2) {
+	opacity: 0; /* Línea central oculta */
+}
+
+.barOpen:nth-child(3) {
+	transform: translateY(-9px) rotate(-45deg); /* Línea inferior girada */
+}
